@@ -1,29 +1,21 @@
-🧠 Flow Guard – Smart Water Monitoring (MVP Firmware)
+ Flow Guard – Smart Water Monitoring (MVP Firmware)
 
 Description:
 This repository contains the embedded firmware for the Flow Guard MVP, a smart IoT system designed to monitor real-time water consumption and detect leaks in residential and commercial buildings. The project integrates a Modbus water meter, a RAKwireless LoRaWAN module, and a ThingsBoard IoT cloud platform for data visualization and analytics.
 
 Core Features:
 
-📟 Modbus Integration: Reads water usage and flow data from a Modbus-based ultrasonic water meter.
 
-📡 LoRaWAN Communication: Transmits sensor data securely to a RAK Gateway.
+Modbus Integration: Reads water usage and flow data from a Modbus-based ultrasonic water meter.
 
-☁️ Cloud Connectivity: Publishes readings to ThingsBoard, enabling real-time dashboards and alerting rules.
+LoRaWAN Communication: Transmits sensor data securely to a RAK Gateway.
 
-⚙️ Built on Zephyr RTOS: Modular, scalable, and real-time embedded firmware base.
+Cloud Connectivity: Publishes readings to ThingsBoard, enabling real-time dashboards and alerting rules.
 
-🧾 Version-Controlled & Documented: Clean, structured firmware with detailed documentation and configuration files.
+Built on Zephyr RTOS: Modular, scalable, and real-time embedded firmware base.
 
-Project Structure:
+Version-Controlled & Documented: Clean, structured firmware with detailed documentation and configuration files.
 
-/src
- ├── main.c            # Zephyr application entry point
- ├── modbus.c          # Modbus communication and data parsing
- ├── lorawan.c         # LoRaWAN setup and data transmission
- └── wifi.c (optional) # Optional Wi-Fi debug/testing interface
-/include
- └── configs.h         # Device configuration and constants
 
 
 Tech Stack:
