@@ -3,6 +3,8 @@
 ## Project Overview
 
 This project implements an IoT-based water meter system using ESP32 with Zephyr RTOS. The device simulates ultrasonic water flow measurements and transmits real-time telemetry data to ThingsBoard cloud platform via MQTT protocol.
+<img width="1897" height="902" alt="Screenshot 2025-11-14 042117" src="https://github.com/user-attachments/assets/3c006f23-5365-4e38-a3e9-ff8170dd63a6" />
+<img width="1152" height="321" alt="Screenshot 2025-11-14 042713" src="https://github.com/user-attachments/assets/14c41087-c1e6-43ad-bf39-f0a6d7ab089c" />
 
 ---
 
@@ -418,10 +420,11 @@ SPDX-License-Identifier: Apache-2.0
 For issues and questions:
 - Check Zephyr documentation: https://docs.zephyrproject.org
 - ThingsBoard documentation: https://thingsboard.io/docs
-- ESP32 documentation: https://docs.espressif.com
+- ESP32 documentation: https://docs.espressif.com<
 
 ---
 
 **Document Version**: 1.0.0  
 **Last Updated**: November 2025  
 **Author**: IoT Development Team
+
