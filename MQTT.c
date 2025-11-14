@@ -1,3 +1,43 @@
+/**
+ * @file main.c
+ * @brief ESP32 Ultrasonic Water Meter IoT System (Zephyr RTOS)
+ * @version 1.0.0
+ * @date 2025-11-14
+ * 
+ * @copyright Copyright (c) 2025
+ * SPDX-License-Identifier: Apache-2.0
+ * 
+ * @details
+ * This firmware implements a smart water meter system using ESP32 and Zephyr RTOS.
+ * It simulates ultrasonic water flow measurements and transmits real-time telemetry
+ * data to ThingsBoard cloud platform via MQTT protocol.
+ * 
+ * Key Features:
+ * - WiFi connectivity with auto-reconnection
+ * - MQTT communication with ThingsBoard
+ * - Real-time flow rate monitoring (5-50 L/h)
+ * - Total volume tracking (liters)
+ * - Leak detection (simulated, 5% probability)
+ * - Telemetry transmitted every 5 seconds
+ * - Device attributes reporting on startup
+ * 
+ * Architecture:
+ *   ESP32 <--WiFi--> Router <--Internet--> ThingsBoard Cloud
+ *   
+ * Data Flow:
+ *   1. WiFi Connection → 2. IP Address Acquisition → 3. DNS Resolution
+ *   4. MQTT Broker Initialization → 5. MQTT Client Connect
+ *   6. Send Device Attributes → 7. Periodic Telemetry Transmission
+ * 
+ * Dependencies:
+ * - Zephyr Networking stack (CONFIG_NET_TCP, CONFIG_NET_IPV4, CONFIG_NET_MGMT)
+ * - Zephyr WiFi driver (ESP32)
+ * - Zephyr MQTT client library
+ * - Logging subsystem
+ *
+ */
+
+
 #include <zephyr/kernel.h>
 #include <zephyr/net/socket.h>
 #include <zephyr/net/mqtt.h>
