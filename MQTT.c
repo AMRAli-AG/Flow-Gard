@@ -3,7 +3,8 @@
  * @brief ESP32 Ultrasonic Water Meter IoT System (Zephyr RTOS)
  * @version 1.0.0
  * @date 2025-11-14
- * 
+ * @Autho: AMR ALI
+ *
  * @copyright Copyright (c) 2025
  * SPDX-License-Identifier: Apache-2.0
  * 
