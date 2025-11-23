@@ -1,3 +1,27 @@
+/**
+ * @file main.c
+ * @brief ESP32 Modbus Water Meter Reader (Zephyr)
+ * @version 1.0
+ * @date 2025-11-23
+ * @author AMR ALI
+ *
+ * @details
+ * This program reads data from an ultrasonic water meter using Modbus RTU
+ * on ESP32 with Zephyr RTOS. The UART is switched between console mode and
+ * Modbus mode to send a read command and receive meter measurements.
+ *
+ * Main Features:
+ * - Build and send Modbus read command (0x03)
+ * - CRC16 Modbus calculation
+ * - UART switching (Console <-> Modbus)
+ * - Read flow, totals, pressure, temperature, and status
+ * - Basic error handling (CRC, timeout, incomplete frame)
+ *
+ * UART Settings for Modbus:
+ *   2400 baud, 8E1, no flow control
+ *
+ */
+
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
 #include <zephyr/drivers/uart.h>
