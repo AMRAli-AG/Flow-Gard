@@ -1,0 +1,9 @@
+/*
+ * Device Tree Overlay for ESP32 DevKit-C
+ * Configures UART0 for Modbus RTU communication
+ */
+
+&uart0 {
+    status = "okay";
+    current-speed = <2400>;  /* Modbus default speed, will be switched dynamically */
+};
